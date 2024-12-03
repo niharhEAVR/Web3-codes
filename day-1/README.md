@@ -1,3 +1,9 @@
+### Todays class slides
+```link
+https://projects.100xdevs.com/tracks/web3-orientation/Web3-Cohort---Orientation-1
+```
+
+
 There are several reasons why some people choose to buy cryptocurrency rather than hold traditional fiat currencies like the Indian Rupee (INR). These reasons often depend on the individual's financial goals, risk tolerance, and economic context. Here are some of the key factors that might make people prefer buying cryptocurrency:
 
 ### 1. **Potential for High Returns**
