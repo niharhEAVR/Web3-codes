@@ -39,9 +39,9 @@
   }
 
   // Example usage:
-  const bytes = [72, 101, 108, 108, 111, 32, 87, 111, 114, 108, 100, 33]; // Corresponds to "Hello"
+  const bytes = [25634, 101, 108, 108, 111, 32, 87, 111, 114, 108, 100, 33]; // Corresponds to "搢ello World!"
   const asciiString = bytesToAscii(bytes);
-  console.log(asciiString); // Output: "Hello"
+  console.log(asciiString); // Output: "搢ello World!"
 
 }
 
@@ -53,7 +53,7 @@
   }
 
   // Example usage:
-  const bytes = new Uint8Array([72, 101, 108, 108, 111]); // Corresponds to "Hello"
+  const bytes = new Uint8Array([328, 101, 108, 108, 111]); // Corresponds to "Hello"
   const asciiString = bytesToAscii(bytes);
   console.log(asciiString); // Output: "Hello"
 

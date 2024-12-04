@@ -1,13 +1,14 @@
-const crypto = require('crypto');
+import crypto from 'crypto'
 
 // Generate a random encryption key
 const key = crypto.randomBytes(32); // 32 bytes = 256 bits
-console.log("\n",key.toString(),"\n");
+console.log("\n", key.toString(), "\n");
 
 const iv = crypto.randomBytes(16); // Initialization vector (IV)
-console.log("\n",iv.toString(),"\n");
+console.log("\n", iv.toString(), "\n");
 
 // Function to encrypt text
+//@ts-ignore
 function encrypt(text) {
     const cipher = crypto.createCipheriv('aes-256-cbc', key, iv);
     let encrypted = cipher.update(text, 'utf8', 'hex');
@@ -16,6 +17,7 @@ function encrypt(text) {
 }
 
 // Function to decrypt text
+//@ts-ignore
 function decrypt(encryptedText) {
     const decipher = crypto.createDecipheriv('aes-256-cbc', key, iv);
     let decrypted = decipher.update(encryptedText, 'hex', 'utf8');

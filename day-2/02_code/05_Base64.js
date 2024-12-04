@@ -10,7 +10,7 @@
 {
     const base64Encoded = "SGVsbG8="
     // Decode Base64 to Buffer
-    const uint8Array = Buffer.from(base64Encoded,"base64")
+    const uint8Array = Buffer.from(base64Encoded, "base64")
     // Pinting that Uint8Array
     const array = new Uint8Array(uint8Array)
     console.log(array);
