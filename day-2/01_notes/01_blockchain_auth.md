@@ -1,3 +1,9 @@
+### todays class slide:
+```link
+https://projects.100xdevs.com/tracks/public-private-keys/Public-Key-Cryptography-1
+```
+
+
 ```text
 How Blockchains do auth
 If you ever want to create an account on a blockchain, you need to generate a public-private keypair.
