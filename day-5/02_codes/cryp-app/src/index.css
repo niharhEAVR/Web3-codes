@@ -1,0 +1,28 @@
+:root {
+
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+}
+
+
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.3em 0.6em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #423d3d;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  color: azure;
+}
+button:hover {
+  border-color: #676ddf;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
