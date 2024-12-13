@@ -10,17 +10,24 @@ import {
   WalletMultiButton
 } from '@solana/wallet-adapter-react-ui';
 import { Airdrop } from './components/Airdrop';
+import { ShowSolBalance } from './components/SolBalance';
+
+import { SendSolToUser } from './components/SendToken';
 
 function App() {
 
 
   return (
-    <ConnectionProvider endpoint={"https://solana-devnet.g.alchemy.com/v2/NyDfwQ_XmNAwVIkSemy1jhnjPWyhs6iy"}>
+    <ConnectionProvider endpoint={"https://api.devnet.solana.com"}> {/* sometimes devnet api doesnot take many request for airdrop, so do in after some interval or find any other way of link to request some airdrop, like (alchemy) */}
       <WalletProvider wallets={[]} autoConnect>
         <WalletModalProvider>
           <h1>Solana Devnet Faucet</h1>
           <WalletMultiButton /> <br />
           <Airdrop/> <br />
+          <ShowSolBalance/> <br />
+
+          <SendSolToUser/> <br /> <br />
+
           <WalletDisconnectButton />
         </WalletModalProvider>
       </WalletProvider>

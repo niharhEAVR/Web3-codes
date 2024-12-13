@@ -11,7 +11,9 @@ export function Airdrop() {
     
     async function sendAirdrop() {
         const ammount  = inputref.current?.value
-        await connection.requestAirdrop(wallet.publicKey, ammount * LAMPORTS_PER_SOL);
+        const response = await connection.requestAirdrop(wallet.publicKey, ammount * LAMPORTS_PER_SOL);
+        console.log(response);
+        
         alert(`${ammount} sol is airdropped in your devnet account`)
     }
 
@@ -20,11 +22,8 @@ export function Airdrop() {
 
         <input ref={inputref} type="text" placeholder="Amount" />
         <button  onClick={sendAirdrop}>Send Airdrop</button>
-        {/* {wallet.publicKey.toString()} */}
+        {/* {wallet.publicKey?.toBase58()} */}
 
 
     </>
 }
-
-
-// i dont know why the transction is getting failed
