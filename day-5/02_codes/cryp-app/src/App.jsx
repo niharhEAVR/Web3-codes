@@ -2,7 +2,6 @@
 
 import React, { useMemo } from 'react';
 import { ConnectionProvider, WalletProvider } from '@solana/wallet-adapter-react';
-import { WalletAdapterNetwork } from '@solana/wallet-adapter-base';
 import {
   WalletConnectButton,
   WalletModalProvider,
@@ -13,6 +12,7 @@ import { Airdrop } from './components/Airdrop';
 import { ShowSolBalance } from './components/SolBalance';
 
 import { SendSolToUser } from './components/SendToken';
+import { SignMessage } from './components/SignMessage';
 
 function App() {
 
@@ -27,6 +27,8 @@ function App() {
           <ShowSolBalance/> <br />
 
           <SendSolToUser/> <br /> <br />
+
+          <SignMessage/> <br />
 
           <WalletDisconnectButton />
         </WalletModalProvider>
