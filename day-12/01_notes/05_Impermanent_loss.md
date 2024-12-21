@@ -338,3 +338,270 @@ So, you’ve lost about **5.72%** of potential gains compared to simply holding 
 1. **Why Loss?**: The loss occurs because the pool rebalances the ratio of SOL/USDC to match market prices, requiring you to hold more of the token that has appreciated less (USDC in this case).
 2. **Offsetting the Loss**: Liquidity providers earn **trading fees** on every swap in the pool. These fees can often offset or even outweigh impermanent loss over time.
 3. **What If SOL’s Price Returns?**: The loss is impermanent because if SOL returns to $25, your liquidity value will align with the original value, eliminating the loss.
+
+
+---
+---
+---
+
+Let me explain that step-by-step in simpler terms with additional clarity.
+
+---
+
+### 1. **New Price Determined**
+In the liquidity pool, the price of SOL is calculated as:
+\[
+\text{Price of SOL} = \frac{\text{USDC (Y)}}{\text{SOL (X)}}
+\]
+
+Initially:
+- **Price of SOL = \( \frac{2500}{100} = 25 \, \text{USDC/SOL} \)**.  
+
+When the price of SOL increases to $50 in the market, traders adjust the pool by buying SOL and adding more USDC to it. This is due to arbitrage.
+
+For the new price in the pool to equal $50:
+\[
+\frac{\text{Y}}{\text{X}} = 50
+\]
+
+This means the ratio of USDC (\( Y \)) to SOL (\( X \)) in the pool must adjust so that it matches the new price.
+
+---
+
+### 2. **Constant Product Formula**
+In Automated Market Makers (AMMs) like this, the product of SOL and USDC amounts in the pool remains constant:
+\[
+X \times Y = K
+\]
+
+Here:
+- \( X = 100 \, \text{(SOL)} \),
+- \( Y = 2500 \, \text{(USDC)} \),
+- \( K = 100 \times 2500 = 250,000 \).
+
+After the price change, \( X \) and \( Y \) will shift, but \( X \times Y \) must still equal **250,000**.
+
+---
+
+### 3. **Relating \( Y \) to \( X \)**
+We now know two things:
+1. \( \frac{Y}{X} = 50 \) (new price in the pool),
+2. \( X \times Y = 250,000 \).
+
+From \( \frac{Y}{X} = 50 \), we can express \( Y \) in terms of \( X \):
+\[
+Y = 50X
+\]
+
+Substitute \( Y = 50X \) into \( X \times Y = 250,000 \):
+\[
+X \times (50X) = 250,000
+\]
+\[
+50X^2 = 250,000
+\]
+\[
+X^2 = 5000
+\]
+\[
+X = \sqrt{5000} \approx 70.71 \, \text{SOL}.
+\]
+
+---
+
+### 4. **Calculating \( Y \) (USDC in the Pool)**
+Now that \( X = 70.71 \, \text{SOL} \), calculate \( Y \):
+\[
+Y = 50X
+\]
+\[
+Y = 50 \times 70.71 \approx 3535.5 \, \text{USDC}.
+\]
+
+---
+
+### 5. **Final Pool Balances**
+After arbitrage and price adjustment, the pool contains:
+- **70.71 SOL**
+- **3535.5 USDC**
+
+---
+
+### Why Did This Happen?
+As traders bought SOL at $25 from the pool (because it was undervalued compared to $50 on the market), they removed SOL and added USDC, reducing \( X \) and increasing \( Y \). Eventually, the pool balanced to match the market price of $50 per SOL, ensuring \( \frac{Y}{X} = 50 \).
+
+---
+
+Would you like a follow-up example or explanation? Let me know!
+
+
+Let's expand on the math with simpler reasoning and another example to ensure it’s completely clear.  
+
+We'll focus on why we calculated \( X = 70.71 \) SOL and \( Y = 3535.5 \) USDC, and why the pool balances shift in this specific way when the price changes.  
+
+---
+
+### **Why Does Arbitrage Shift \( X \) and \( Y \)?**
+
+1. **Initial Condition:**
+   - Pool starts with \( 100 \, \text{SOL} \) and \( 2500 \, \text{USDC} \).
+   - This means each SOL is valued at \( \frac{2500}{100} = 25 \, \text{USDC/SOL} \).
+
+2. **Market Condition:**
+   - Suddenly, in the market, SOL rises to **50 USDC per SOL**.
+
+3. **Opportunity for Arbitrage:**
+   - In the pool, SOL is still priced at \( 25 \, \text{USDC/SOL} \), so it’s **cheaper than the market**.
+   - Traders will buy **SOL** from the pool (at $25 each) and sell it in the market (at $50 each) for profit.
+   - Each time they buy SOL, they must deposit more USDC into the pool (to follow the rules of Automated Market Makers).
+
+---
+
+### **How Arbitrage Balances the Pool?**
+
+The pool uses the **constant product formula**:
+\[
+X \times Y = K
+\]
+Where:
+- \( X \) = SOL in the pool,
+- \( Y \) = USDC in the pool,
+- \( K = 250,000 \) (the constant).  
+
+#### **Condition 1:**
+For the pool to reflect the new SOL price (\( \frac{Y}{X} = 50 \)), the ratio of USDC to SOL must adjust so that:
+\[
+\frac{Y}{X} = 50.
+\]
+
+#### **Condition 2:**
+At the same time, the product \( X \times Y \) must stay constant:
+\[
+X \times Y = 250,000.
+\]
+
+---
+
+### **Rebalancing the Pool**
+By solving the equations together:
+1. From \( \frac{Y}{X} = 50 \), we can express:
+   \[
+   Y = 50X.
+   \]
+
+2. Substituting \( Y = 50X \) into \( X \times Y = 250,000 \):
+   \[
+   X \times (50X) = 250,000
+   \]
+   \[
+   50X^2 = 250,000
+   \]
+   \[
+   X^2 = 5000
+   \]
+   \[
+   X = \sqrt{5000} \approx 70.71 \, \text{SOL}.
+   \]
+
+3. Substituting \( X \) back into \( Y = 50X \):
+   \[
+   Y = 50 \times 70.71 \approx 3535.5 \, \text{USDC}.
+   \]
+
+Thus, after rebalancing:
+- \( X = 70.71 \, \text{SOL} \),
+- \( Y = 3535.5 \, \text{USDC} \).
+
+---
+
+### **Visualizing the Shift:**
+
+Initially:
+- **100 SOL** and **2500 USDC**.
+- Price of SOL = \( \frac{2500}{100} = 25 \).
+
+After traders buy **29.29 SOL** from the pool (to profit from arbitrage):
+- SOL decreases to **70.71**.
+- USDC increases to **3535.5**.
+
+Now, the pool reflects the new price:
+\[
+\frac{3535.5}{70.71} \approx 50 \, \text{USDC/SOL}.
+\]
+
+---
+
+### **What About the Liquidity Provider (You)?**
+
+You own **10%** of the pool. After the shift:
+- You now own \( 10\% \) of **70.71 SOL**, which is:
+  \[
+  0.1 \times 70.71 = 7.071 \, \text{SOL}.
+  \]
+- You also own \( 10\% \) of **3535.5 USDC**, which is:
+  \[
+  0.1 \times 3535.5 = 353.55 \, \text{USDC}.
+  \]
+
+---
+
+### **Total Value of Your Share After Rebalancing**
+Let’s calculate the total value of your share, using the new SOL price ($50):
+
+1. **Value of SOL you own:**
+   \[
+   7.071 \times 50 = 353.55 \, \text{USDC}.
+   \]
+
+2. **Value of USDC you own:**
+   \[
+   353.55 \, \text{USDC}.
+   \]
+
+Total value of your share:
+\[
+353.55 + 353.55 = 707.1 \, \text{USDC}.
+\]
+
+---
+
+### **Compare to HODLing**
+If you had simply held your original tokens (**10 SOL** and **250 USDC**) instead of providing liquidity:
+1. **10 SOL** would now be worth:
+   \[
+   10 \times 50 = 500 \, \text{USDC}.
+   \]
+2. **250 USDC** = 250 USDC.
+
+Total value = \( 500 + 250 = 750 \, \text{USDC} \).
+
+---
+
+### **Impermanent Loss**
+Your **loss** compared to HODLing:
+\[
+\text{Impermanent Loss} = \text{HODL Value} - \text{Pool Value}.
+\]
+\[
+\text{Impermanent Loss} = 750 - 707.1 = 42.9 \, \text{USDC}.
+\]
+
+Percentage loss:
+\[
+\text{Percentage Loss} = \frac{42.9}{750} \times 100 \approx 5.72\%.
+\]
+
+---
+
+### **Key Takeaways**
+1. **Traders Adjust the Pool:**
+   Arbitrage ensures the pool price matches market price by shifting SOL and USDC amounts in the pool.
+   
+2. **Constant Product Formula:**
+   The pool always maintains \( X \times Y = K \), which drives the math.
+
+3. **Impermanent Loss:**
+   The **loss** comes from holding fewer SOL (the appreciating asset) because some SOL were swapped out for USDC during rebalancing.
+
+4. **Fees Offset the Loss:**
+   As a liquidity provider, you also earn a portion of the fees collected during the rebalancing swaps. These fees can sometimes fully cover the impermanent loss.
