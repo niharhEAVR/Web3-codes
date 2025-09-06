@@ -1,8 +1,84 @@
-### Todays class slides
-```link
-https://projects.100xdevs.com/tracks/web3-orientation/Web3-Cohort---Orientation-1
-```
+## 💵 1. Why People Trust Government Money (Fiat Currency)
 
+* **Backed by Law & Government** → INR is valid because the Indian government + RBI says so. USD is valid because the U.S. government says so.
+* **Legal Tender** → Shops *must* accept it for payments.
+* **Central Bank Control** → RBI/Fed ensures stability, prints more money, manages inflation.
+
+So trust comes from **government + laws + history**.
+
+---
+
+## ₿ 2. Why People Started Trusting Bitcoin
+
+Bitcoin is very different. Trust came because of:
+
+1. **Decentralization**
+
+   * No government or company controls Bitcoin.
+   * It runs on a global network of computers (blockchain).
+
+2. **Limited Supply**
+
+   * Only **21 million bitcoins will ever exist**.
+   * Unlike dollars/rupees (which governments can print endlessly), Bitcoin cannot be inflated artificially.
+
+3. **Transparency**
+
+   * Every Bitcoin transaction is on the public blockchain.
+   * No one can secretly create more coins.
+
+4. **Crisis Timing**
+
+   * Bitcoin was introduced in **2009, right after the 2008 financial crisis**.
+   * Many people lost trust in banks/governments at that time → Bitcoin looked like a “money outside the system.”
+
+---
+
+## 📉 3. The Harsh Reality About Bitcoin
+
+* Bitcoin is **not stable** like USD/INR.
+* Its value depends on **demand & supply, speculation, news, regulations**.
+* Example:
+
+  * 2017 → \$20,000
+  * 2018 → \$3,000
+  * 2021 → \$69,000
+  * 2022 → \$16,000
+  * 2024 → around \$60,000 again
+
+👉 If you had savings in Bitcoin, your wealth would **swing wildly**.
+
+---
+
+## 🛡️ 4. Your Concerns: “How Can I Trust Bitcoin?”
+
+* **Will it last longer?**
+  Bitcoin has survived 15 years → so far, yes. But no one can guarantee the next 15 years.
+
+* **Will I lose value?**
+  Yes, it’s possible. Bitcoin is *high-risk, high-reward*. You can double your money or lose half quickly.
+
+* **Who controls it?**
+  No one. It’s decentralized. That’s both the **strength** (no government manipulation) and the **weakness** (no protection if things go wrong).
+
+* **Surety of getting money back?**
+  There is **no surety** like you have with a bank.
+
+  * If your INR is in SBI → RBI guarantees deposit safety up to ₹5 lakh.
+  * If your Bitcoin is in your wallet → *only you* are responsible. If you lose keys or if price falls, no one will save you.
+
+---
+
+## ✅ 5. Final Answer
+
+* Trust in Bitcoin comes from **mathematics + code + community belief**, not government.
+* Unlike INR/USD, there is **no guarantee, no central authority, no legal tender law**.
+* Bitcoin is more like **digital gold** → a hedge against inflation, not a stable salary/savings account.
+* If you want to save safely → use **USD/INR in banks**.
+* If you want to take risk for higher returns → put some in Bitcoin, but never “blindly trust.”
+
+---
+---
 
 There are several reasons why some people choose to buy cryptocurrency rather than hold traditional fiat currencies like the Indian Rupee (INR). These reasons often depend on the individual's financial goals, risk tolerance, and economic context. Here are some of the key factors that might make people prefer buying cryptocurrency:
 
